@@ -7,7 +7,6 @@ namespace roteiro6
         static void Main(string[] args)
         {
             int x=1, S=0;
-            Console.WriteLine("Hello World!");
             while(x !=0){
                 Console.WriteLine("informe um valor: ");
                 x = int.Parse(Console.ReadLine());
