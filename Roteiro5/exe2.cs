@@ -1,19 +1,18 @@
 ﻿using System;
+
+namespace Roteiro5
+{
     class Program
     {
         static void Main(string[] args){
             
-            int cont = 1, multiplo, intervalo;
-            Console.WriteLine("Insira um número e descubra o intervalo");
-            intervalo = int.Parse(Console.ReadLine());
+            int multiplo = 7;
+            Console.WriteLine("Multiplos de 7 menores que 1000...");
             do{
-                multiplo = cont*3;
-                Console.WriteLine(multiplo);
-                cont = cont +1;
-                
-            }while(multiplo<intervalo);
-           
-           
+                if (multiplo % 7 == 0)
+                    Console.Write(multiplo + ", ");
+                multiplo++;
+            }while(multiplo < 1000);
         }
     }
-    
+}

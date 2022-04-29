@@ -6,15 +6,14 @@ namespace Roteiro5
     {
         static void Main(string[] args){
             
-            int num1, impar;
+            int num1, divisor = 1;
             Console.WriteLine("Insira um numero: ");
             num1 = int.Parse(Console.ReadLine());
-            impar = num1;
             do{
-                impar--;
-                if (impar % 2 != 0)
-                    Console.Write(impar + ", ");
-            }while(impar > 0);
+                if (num1 % divisor == 0)
+                Console.Write(divisor + " ");
+                divisor++;
+            }while(divisor <= num1);
         }
     }
 }
